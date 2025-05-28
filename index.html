@@ -3,136 +3,177 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Get More Cleaning Jobs with Your Professional Website</title>
+  <title>Your Professional Cleaning Website | Dravly</title>
   <style>
-    /* Reset */
-    body, table, td, a { -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
-    table { border-collapse:collapse !important; }
-    img { border:0; height:auto; line-height:100%; outline:none; text-decoration:none; }
-    body { margin:0; padding:0; width:100% !important; background-color:#f7fafc; }
-    /* Responsive */
-    @media screen and (max-width:600px) {
-      .container { width:100% !important; }
-      .stack { display:block !important; width:100% !important; }
-      .logo { width:120px !important; height:auto !important; }
-      .header-image { height:auto !important; }
+    /* Modern Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table { border-collapse: collapse !important; width: 100%; }
+    img { border: 0; height: auto; line-height: 100%; max-width: 100%; outline: none; text-decoration: none; }
+    body { margin: 0; padding: 0; width: 100% !important; background-color: #f7f9fc; font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color: #334155; line-height: 1.6; }
+    
+    /* Container Styles */
+    .container { max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); }
+    
+    /* Header Styles */
+    .header-image { width: 100%; height: auto; object-fit: cover; display: block; }
+    
+    /* Content Styles */
+    .content { padding: 35px; }
+    .logo { max-width: 160px; height: auto; display: block; margin: 0 auto 20px; }
+    .section-title { color: #2563eb; font-size: 26px; margin: 15px 0 10px; font-weight: 700; line-height: 1.3; }
+    .subtitle { color: #64748b; font-size: 18px; margin: 0 0 20px; font-weight: 500; text-align: center; }
+    
+    /* Testimonial */
+    .testimonial { background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 100%); padding: 22px; border-radius: 10px; border-left: 4px solid #2563eb; margin: 25px 0; font-style: italic; position: relative; }
+    .testimonial:before { content: ""; position: absolute; top: 10px; left: 10px; font-size: 60px; color: #2563eb; opacity: 0.15; font-family: Georgia, serif; }
+    .testimonial-author { display: block; margin-top: 15px; font-weight: 600; font-style: normal; color: #2563eb; }
+    
+    /* Benefits List */
+    .benefits-list { margin: 25px 0; }
+    .benefit-item { padding: 12px 0; display: flex; align-items: flex-start; border-bottom: 1px solid #e2e8f0; }
+    .benefit-icon { width: 24px; margin-right: 15px; flex-shrink: 0; margin-top: 3px; }
+    .benefit-text { flex: 1; }
+    
+    /* Buttons */
+    .button { background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); color: #ffffff !important; padding: 14px 30px; text-decoration: none; border-radius: 8px; display: inline-block; font-weight: 600; font-size: 17px; text-align: center; box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2); transition: all 0.3s ease; }
+    .button:hover { background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%); transform: translateY(-2px); box-shadow: 0 6px 10px rgba(37, 99, 235, 0.3); }
+    
+    /* Divider */
+    .divider { height: 1px; background: linear-gradient(to right, #ffffff, #e2e8f0, #ffffff); margin: 30px 0; }
+    
+    /* Payment Section */
+    .payment-section { background: #f8fafc; padding: 25px; border-radius: 10px; margin: 25px 0; border: 1px solid #e2e8f0; text-align: center; }
+    .badge { display: inline-block; background: #dcfce7; color: #166534; padding: 5px 15px; border-radius: 50px; font-weight: 600; font-size: 14px; margin-bottom: 15px; }
+    
+    /* Footer */
+    .footer { background: #f1f5f9; padding: 25px; text-align: center; font-size: 13px; color: #64748b; }
+    .footer-logo { max-width: 120px; height: auto; display: block; margin: 0 auto 15px; }
+    .contact-links { margin: 10px 0; }
+    .contact-links a { color: #2563eb; text-decoration: none; margin: 0 8px; font-weight: 500; }
+    .copyright { margin-top: 15px; font-size: 12px; }
+    
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    /* Brand */
-    .brand-color { color:#2b6cb0; }
-    .button { background-color:#2b6cb0; color:#ffffff !important; padding:12px 25px; text-decoration:none; border-radius:4px; display:inline-block; font-weight:bold; font-size:16px; }
-    .logo { max-width:160px; height:auto; }
-    .section-header { background-color:#2b6cb0; color:#ffffff; padding:25px; text-align:center; font-size:24px; margin:0; font-weight:bold; }
-    .content { background-color:#ffffff; padding:25px; font-family:'Arial', sans-serif; color:#4a5568; font-size:16px; line-height:1.6; }
-    .footer { background-color:#f8fafc; padding:20px; text-align:center; font-size:12px; color:#718096; }
-    .divider { border-top:1px solid #e2e8f0; margin:20px 0; }
-    .testimonial { background-color:#ebf8ff; padding:15px; border-left:4px solid #2b6cb0; margin:15px 0; font-style:italic; }
-    .header-image { width:100%; height:auto; display:block; }
-    .benefit-item { padding:10px 0; }
-    .benefit-icon { width:20px; margin-right:10px; vertical-align:middle; }
+    .animate { animation: fadeIn 0.6s ease-out forwards; }
+    
+    /* Responsive */
+    @media screen and (max-width: 600px) {
+      .content { padding: 25px 20px; }
+      .section-title { font-size: 22px; }
+      .subtitle { font-size: 16px; }
+      .button { display: block; margin: 0 auto; width: 90%; max-width: 280px; }
+      .header-image { height: 180px; }
+    }
   </style>
 </head>
-<body>
-  <table width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-      <td align="center" style="padding:20px 10px;">
-        <table class="container" width="600" cellpadding="0" cellspacing="0" style="border-radius:8px; overflow:hidden; box-shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);">
-          <!-- Header Image -->
-          <tr>
-            <td>
-              <img src="https://outreach.dravly.com/assets/cleaning-before-after-photo.webp" alt="Clean Bathroom" class="header-image" />
-            </td>
-          </tr>
-          <!-- Top Logo and Heading -->
-          <tr>
-            <td align="center" class="content" style="padding-bottom:0;">
-              <img src="https://outreach.dravly.com/assets/gaby-logo.jpg" alt="Cleaning with Gaby Logo" class="logo" />
-              <h1 style="color:#2b6cb0; margin-bottom:5px;">Ready to Book More Cleaning Jobs?</h1>
-              <p style="margin-top:0; font-size:18px;">Your professional website is just a click away</p>
-            </td>
-          </tr>
-          <!-- Body -->
-          <tr>
-            <td class="content">
-              <p>Hi Gaby,</p>
-              <p>My specialty is building professional, 24/7 lead-generating websites for cleaning businesses—so you can attract more clients and grow, even when you’re on the job. Right now, potential customers searching for cleaning services in your area can’t find you online.</p>
-              
-              <div class="testimonial">
-                "Shamim built www.aboutjspeaks.com from the ground up with unmatched patience - executing every detail to the tee. I highly recommend him!"<br>
-                <strong>- A Happy Client</strong>
-              </div>
-              
-              <h3 style="color:#2b6cb0;">Here's what your website will include:</h3>
-              
-              <table width="100%" cellpadding="0" cellspacing="0" style="margin:15px 0;">
-                <tr>
-                  <td class="benefit-item">
-                    <img src="https://outreach.dravly.com/assets/checkmark.png" class="benefit-icon" alt="Checkmark"> <strong>Mobile-Friendly Design</strong> - Looks great on all devices
-                  </td>
-                </tr>
-                <tr>
-                  <td class="benefit-item">
-                    <img src="https://outreach.dravly.com/assets/checkmark.png" class="benefit-icon" alt="Checkmark"> <strong>Service Pages</strong> - Showcase your cleaning specialties
-                  </td>
-                </tr>
-                <tr>
-                  <td class="benefit-item">
-                    <img src="https://outreach.dravly.com/assets/checkmark.png" class="benefit-icon" alt="Checkmark"> <strong>Online Booking</strong> - Let clients schedule directly
-                  </td>
-                </tr>
-                <tr>
-                  <td class="benefit-item">
-                    <img src="https://outreach.dravly.com/assets/checkmark.png" class="benefit-icon" alt="Checkmark"> <strong>Testimonials</strong> - Build trust with before/after photos
-                  </td>
-                </tr>
-                <tr>
-                  <td class="benefit-item">
-                    <img src="https://outreach.dravly.com/assets/checkmark.png" class="benefit-icon" alt="Checkmark"> <strong>Contact Form</strong> - Easy way for clients to reach you
-                  </td>
-                </tr>
-                <tr>
-                  <td class="benefit-item">
-                    <img src="https://outreach.dravly.com/assets/checkmark.png" class="benefit-icon" alt="Checkmark"> <strong>SEO Optimized</strong> - Get found on Google searches
-                  </td>
-                </tr>
-                <tr>
-                  <td class="benefit-item">
-                    <img src="https://outreach.dravly.com/assets/checkmark.png" class="benefit-icon" alt="Checkmark"> <strong>Customizable Features </strong> - — Tailored exactly to your needs
-                  </td>
-                </tr>
-              </table>
-              
-              <div align="center" style="margin:25px 0;">
-                <a href="https://www.dravly.com/contact/" class="button">GET MY WEBSITE NOW</a>
-              </div>
-              
-              <div class="divider"></div>
-              
-              <h3 style="color:#2b6cb0;">No Upfront Payment Required</h3>
-              <p>I believe in earning your trust first—only pay after you're happy with the results. Let's work together to give your business the online presence it deserves, risk-free.</p>
-              
-          
-              
-              <p>Or simply reply to this email with "WEBSITE" and I'll personally walk you through the process.</p>
-              
-              <p>To your success,</p>
-              <p><strong>Shamim</strong><br>
-              Founder, Dravly<br>
-              Website Specialist</p>
-            </td>
-          </tr>
-          <!-- Footer -->
-          <tr>
-            <td class="footer">
-              <img src="https://outreach.dravly.com/assets/dravly-logo.png" alt="Dravly Logo" class="logo" style="margin-bottom:10px;" /><br>
-            
-              <a href="mailto:shamim.dravly@gmail.com" class="brand-color">shamim.dravly@gmail.com</a> | <a href="tel:+8801999179511" class="brand-color">+88 019 991 79511</a><br>
-              <a href="https://www.dravly.com" class="brand-color">www.dravly.com</a><br>
-              © 2025 Dravly. All rights reserved.
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+<body style="background-color: #f7f9fc; padding: 20px 10px;">
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Header Image -->
+    <img src="https://outreach.dravly.com/assets/cleaning-before-after-photo.webp" alt="Professional Cleaning Services" class="header-image animate">
+    
+    <!-- Content Section -->
+    <div class="content">
+      <img src="https://outreach.dravly.com/assets/gaby-logo.jpg" alt="Cleaning with Gaby Logo" class="logo animate">
+      <h1 class="section-title animate" style="text-align: center;">Ready to Book More Cleaning Jobs?</h1>
+      <p class="subtitle animate">Your professional website is just a click away</p>
+      
+      <p class="animate">Hi Gaby,</p>
+      <p class="animate">My specialty is building professional, 24/7 lead-generating websites for cleaning businesses—so you can attract more clients and grow, even when you're on the job.</p>
+      
+      <div class="testimonial animate">
+        "Shamim built www.aboutjspeaks.com from the ground up with unmatched patience - executing every detail to the tee. I highly recommend him!"
+        <span class="testimonial-author">- A Happy Client</span>
+      </div>
+      
+      <h2 class="section-title animate">Everything Your Website Will Include:</h2>
+      
+      <div class="benefits-list">
+        <div class="benefit-item animate">
+          <img src="https://outreach.dravly.com/assets/checkmark.png" class="benefit-icon" alt="Checkmark">
+          <div class="benefit-text">
+            <strong>Mobile-Friendly Design</strong> - Looks perfect on all devices
+          </div>
+        </div>
+        
+        <div class="benefit-item animate">
+          <img src="https://outreach.dravly.com/assets/checkmark.png" class="benefit-icon" alt="Checkmark">
+          <div class="benefit-text">
+            <strong>Service Pages</strong> - Showcase your cleaning specialties
+          </div>
+        </div>
+        
+        <div class="benefit-item animate">
+          <img src="https://outreach.dravly.com/assets/checkmark.png" class="benefit-icon" alt="Checkmark">
+          <div class="benefit-text">
+            <strong>Online Booking</strong> - Let clients schedule directly
+          </div>
+        </div>
+        
+        <div class="benefit-item animate">
+          <img src="https://outreach.dravly.com/assets/checkmark.png" class="benefit-icon" alt="Checkmark">
+          <div class="benefit-text">
+            <strong>Testimonials</strong> - Build trust with before/after photos
+          </div>
+        </div>
+        
+        <div class="benefit-item animate">
+          <img src="https://outreach.dravly.com/assets/checkmark.png" class="benefit-icon" alt="Checkmark">
+          <div class="benefit-text">
+            <strong>Contact Form</strong> - Easy way for clients to reach you
+          </div>
+        </div>
+        
+        <div class="benefit-item animate">
+          <img src="https://outreach.dravly.com/assets/checkmark.png" class="benefit-icon" alt="Checkmark">
+          <div class="benefit-text">
+            <strong>SEO Optimized</strong> - Get found on Google searches
+          </div>
+        </div>
+        
+        <div class="benefit-item animate">
+          <img src="https://outreach.dravly.com/assets/checkmark.png" class="benefit-icon" alt="Checkmark">
+          <div class="benefit-text">
+            <strong>Customizable Features</strong> - Tailored exactly to your needs
+          </div>
+        </div>
+      </div>
+      
+      <div style="text-align: center; margin: 30px 0;" class="animate">
+        <a href="https://www.dravly.com/contact/" class="button">GET MY WEBSITE NOW</a>
+      </div>
+      
+      <div class="divider"></div>
+      
+      <div class="payment-section animate">
+        <div class="badge">RISK-FREE OFFER</div>
+        <h3 class="section-title" style="color: #2563eb; margin-top: 0;">No Upfront Payment Required</h3>
+        <p>I believe in earning your trust first—only pay after you're 100% satisfied with the results. Let's work together to give your business the online presence it deserves.</p>
+      </div>
+      
+      <p class="animate" style="text-align: center; margin-top: 25px;">
+        Simply reply to this email with <strong style="color: #2563eb;">"WEBSITE"</strong> and I'll personally walk you through the process.
+      </p>
+      
+      <p class="animate" style="margin-top: 30px;">To your success,</p>
+      <p class="animate" style="font-weight: 600; margin-top: 5px;">Shamim</p>
+      <p class="animate" style="color: #64748b; font-size: 15px;">Founder, Dravly | Website Specialist</p>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+      <img src="https://outreach.dravly.com/assets/dravly-logo.png" alt="Dravly Logo" class="footer-logo">
+      <div class="contact-links">
+        <a href="mailto:shamim.dravly@gmail.com">shamim.dravly@gmail.com</a> | 
+        <a href="tel:+8801999179511">+88 019 991 79511</a>
+      </div>
+      <a href="https://www.dravly.com" class="contact-links">www.dravly.com</a>
+      <p class="copyright">© 2025 Dravly. All rights reserved.</p>
+    </div>
+  </div>
 </body>
 </html>
