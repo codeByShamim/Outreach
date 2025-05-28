@@ -92,26 +92,28 @@
       text-align: center;
     }
     
-    .benefit {
-      display: flex;
-      align-items: center;
-      padding: 12px 0;
-      border-bottom: 1px solid #e2e8f0;
-    }
-    
-    .check-icon {
-      width: 25px;
-      height: 25px;
-      background: #2b6cb0;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-weight: bold;
-      margin-right: 15px;
-      flex-shrink: 0;
-    }
+   .benefit {
+  display: flex;
+  align-items: center;      /* ensure icon + text are on the same vertical middle */
+  padding: 12px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.check-icon {
+  display: inline-block;     /* use inline-block so line-height works reliably */
+  width: 25px;
+  height: 25px;
+  line-height: 25px;         /* exactly equals the height */
+  text-align: center;        /* horizontal centering */
+  vertical-align: middle;    /* baseline alignment fallback */
+  background: #2b6cb0;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-right: 15px;
+  color: #fff;
+  flex-shrink: 0;
+}
+
     
     .benefit-text {
       font-size: 16px;
@@ -262,7 +264,7 @@
       
       <!-- Testimonial -->
       <div class="testimonial-box">
-        <p class="testimonial-text">"Shamim made me a beautiful website that's super easy to use. Now I get calls from new customers while I'm busy cleaning!"</p>
+        <p class="testimonial-text">"Shamim built my website from the ground up with unmatched patience - executing every detail to the tee. I highly recommend him!"</p>
         <p class="testimonial-author">- One of my happy clients</p>
       </div>
       
@@ -315,7 +317,7 @@
       </div>
       
       <!-- Simple Option -->
-      <p class="simple-option">Or simply reply to this email with <span class="highlight">"YES"</span> and I'll help you get started!</p>
+      <p class="simple-option">Simply reply to this email with <span class="highlight">"YES"</span> and I'll help you get started!</p>
       
       <!-- Signature -->
       <div class="signature">
@@ -335,7 +337,7 @@
         <a href="tel:+8801999179511">+88 019 991 79511</a>
       </div>
       <a href="https://www.dravly.com" class="contact-links">www.dravly.com</a>
-      <p class="copyright">© 2025 Dravly. Helping cleaning businesses thrive.</p>
+      <p class="copyright">© 2025 Dravly.</p>
     </div>
   </div>
 </body>
